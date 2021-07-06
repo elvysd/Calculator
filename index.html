@@ -1,1 +1,71 @@
 
+
+<!DOCTYPE html>
+
+
+
+    <style>
+        @use "@material/button";
+        @include button.core-styles;
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>
+            Calculator
+        </title>
+
+    </head>
+
+    <header>
+        <h1> 
+            Material Design Calculator 
+        </h1>
+    </header>
+
+    <script src ="button.js"></script>
+
+    <main>
+        <body>
+            <form>
+
+                <div id="container">
+                    <input type="number">
+                    <button class="mdc-button">
+                        <span class="mdc-button__ripple"></span>
+                        <span class="mdc-button__label">%</span>
+                    </button>
+                    <button class="mdc-button">CE</button> 
+                    <button class="mdc-button">CE</button>
+                    <button class="mdc-button"><</button>
+
+                    <button class="mdc-button">7</button>
+                    <button class="mdc-button">8</button>
+                    <button class="mdc-button">9</button>
+                    <button class="mdc-button">X</button>
+
+                    <button class="mdc-button">4</button>
+                    <button class="mdc-button">5</button>
+                    <button class="mdc-button">6</button>
+                    <button class="mdc-button">-</button>
+
+                    <button class="mdc-button">1</button>
+                    <button class="mdc-button">2</button>
+                    <button class="mdc-button">3</button>
+                    <button class="mdc-button">+</button>
+
+                    <button class="mdc-button">+/-</button>
+                    <button class="mdc-button">0</button>
+                    <button class="mdc-button">.</button>
+                    <button class="mdc-button mdc-button--raised">
+                        <span class="mdc-button__label">=</span>
+                    </button>
+                </div>
+            </form>
+        </body>
+    </main>
+
+
+
+</html>
