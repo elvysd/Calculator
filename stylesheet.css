@@ -9,18 +9,32 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto";
   }
+  #navbar {
+    font-family: "Roboto";
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    background-color: #0000b9;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0px 1px 10px #0000b970;
+    padding: 1%;
+    position: fixed;
+}  
 
-header {
+h1 {
     font-family: "Roboto";
     text-align: center;
-    font-size: 24px;
+    font-size: 250%;
     color: white;
-    background-color: #2f09df;
+    background-color: #5f01ed;
     margin: 0;
-    margin-bottom: 15px;
-    padding: 5%;
+    margin-bottom: 2%;
+    padding: 8%;
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -29,35 +43,28 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type=text] {
   -moz-appearance: textfield;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  width: 800px;
-  padding: 15px;
-  margin: 0 5px 5px 5px;
-  font-size: 110%;
+  width: 80%;
+  margin: 25px 5px 5px 5px;
+  font-size: 100%;
+  padding: 1%;
+  border-radius: 10px;
+  border-style: none;
+  color: black;
 }
 
 #container {
-    width: 845px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
 }
-/*
-.number {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    min-width: 100px;
-    min-height: 100pxpx;
-    display: flexbox;
-    justify-content: space-between;
-    border-radius:4px;
-}
-*/
+
 .mdc-button {
     flex: 1 0 21%;
     justify-content: space-between;
@@ -65,8 +72,6 @@ input[type=number] {
     padding: 15px;
     font-size: 110%;
 }
-.mdc-button--raised {
-
-    --mdc-theme-primary: blue;
+a {
+    text-decoration: none;
 }
-

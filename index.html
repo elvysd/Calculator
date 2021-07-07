@@ -11,6 +11,7 @@
     </style>
 
     <head>
+
         <link rel="stylesheet" href="stylesheet.css">
         <title>
             Calculator
@@ -19,8 +20,12 @@
     </head>
 
     <header>
+        <a id="navbar" href="">Home</a>
         <h1> 
-            Material Design Calculator 
+            Material Design Calculator <br>
+            <label>
+                <input type="text" id="s"  onkeypress="numberEntry(event)" >
+            </label>
         </h1>
     </header>
 
@@ -31,44 +36,41 @@
             <form>
 
                 <div id="container">
-                    <label>
-                    <input type="number" id="s" pattern="[0-9]" onkeypress="numberEntry(event)" >
-                    </label>
 
-                    <button class="mdc-button">
+
+                    <button class="mdc-button" onclick="buttonDown('^')" type="button">
                         <span class="mdc-button__ripple"></span>
-                        <span class="mdc-button__label">✂︎</span>
+                        <span class="mdc-button__label">sqrt</span>
                     </button>
-                    <button class="mdc-button">%</button> 
-                    <button class="mdc-button">CE</button>
-                    <button class="mdc-button">←</button>
+                    <button class="mdc-button" onclick="buttonDown('/')" type="button">/</button>
+                    <button class="mdc-button" onclick="buttonDown('CE')" type="button">CE</button>
+                    <button class="mdc-button" onclick="buttonDown('Backspace')" type="button">←</button>
 
                     <button class="mdc-button" onclick="buttonDown(7)" type="button">7</button>
                     <button class="mdc-button" onclick="buttonDown(8)" type="button">8</button>
                     <button class="mdc-button" onclick="buttonDown(9)" type="button">9</button>
-                    <button class="mdc-button">x</button>
+                    <button class="mdc-button" onclick="buttonDown('*')" type="button">x</button>
 
                     <button class="mdc-button" onclick="buttonDown(4)" type="button">4</button>
                     <button class="mdc-button" onclick="buttonDown(5)" type="button">5</button>
                     <button class="mdc-button" onclick="buttonDown(6)" type="button">6</button>
-                    <button class="mdc-button">-</button>
+                    <button class="mdc-button" onclick="buttonDown('-')" type="button">-</button>
 
                     <button class="mdc-button" onclick="buttonDown(1)" type="button">1</button>
                     <button class="mdc-button" onclick="buttonDown(2)" type="button">2</button>
                     <button class="mdc-button" onclick="buttonDown(3)" type="button">3</button>
-                    <button class="mdc-button">+</button>
+                    <button class="mdc-button" onclick="buttonDown('+')" type="button">+</button>
 
-                    <button class="mdc-button">+/-</button>
+                    <button class="mdc-button" onclick="buttonDown('+/-')" type="button">+/-</button>
                     <button class="mdc-button" onclick="buttonDown(0)" type="button">0</button>
-                    <button class="mdc-button">.</button>
-                    <input type="submit" class="mdc-button mdc-button--raised" value="=">
-                        <span class="mdc-button__label"></span>
-                    </button>
+                    <button class="mdc-button" onclick="buttonDown('.')" type="button">.</button>
+                    <button class="mdc-button" onclick="buttonDown('=')" type="button">=</button>
+
                 </div>
             </form>
         </body>
     </main>
 
-    <script src ="button.js"></script>
+    <script type = "module" src ="button.js"></script>
 
 </html>
