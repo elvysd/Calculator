@@ -37,10 +37,11 @@ input[type=number] {
   width: 800px;
   padding: 15px;
   margin: 0 5px 5px 5px;
+  font-size: 110%;
 }
 
 #container {
-    width: 800px;
+    width: 845px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -62,6 +63,7 @@ input[type=number] {
     justify-content: space-between;
     margin: 5px;
     padding: 15px;
+    font-size: 110%;
 }
 .mdc-button--raised {
 
